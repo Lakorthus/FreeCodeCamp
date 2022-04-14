@@ -13,7 +13,7 @@ body {
     left: 0px;
     width: 300px;
     height: 100%;
-    max-height: 70px;
+    max-height: 155px;
     border-right: solid;
     border-color: rgba(183, 235, 24, 0.4);
   }
@@ -48,4 +48,3 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
-  
