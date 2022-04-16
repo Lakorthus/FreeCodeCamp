@@ -1,165 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-     <!--informacion general-->
-        <title>SurveyForm</title>
-        <meta charset="utf-8"> <!-- forma de describir que tipo de caracteres estan en la pagina utf-8 es para EN -->
-        <meta name="description" content="SurveyForm"> <!--Usado por el search engine-->
-     <!--links para ccs file y icono del website-->
-        <link href="style.css" type="text/css" rel="stylesheet">
-        <link href="" type="image/x-icon" rel="shortcut icon">
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-              <h1 id="title" class="text-center"><u>Youtube Review form</u></h1>
-              <p id="description" class="description text-center">Thank you for help us improve
-              </p>
-            </header>
-            <form id="survey-form">
-              <div class="form-group">
-                <label id="name-label" 
-                       for="name">Name</label>
-                <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      class="form-control"
-                      placeholder="Enter your name"
-                      required
-                />
-              </div>
-              <div class="form-group">
-                  <label id="email-label" for="email">Email</label>
-                  <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      class="form-control"
-                      placeholder="Enter your email"
-                      required
-                  />
-              </div>
-              <div class="form-group">
-                <label id="number-label" for="number"
-                 >Age<span class="clue">(optional)</span></label
-                >
-                <input
-                      type="number"
-                      name="age"
-                      id="number"
-                      min="16"
-                      max="100"
-                      class="form-control"
-                      placeholder="Age"
-                />
-              </div>
-              <div class="form-group">
-                <p>Which content do you enjoy most?</p>
-                <select id="dropdown" name="content" class="form-control" required>
-                  <option disable selected value>Select content</option>
-                  <option value="comedy">Comedy</option>
-                  <option value="drama">Drama</option>
-                  <option value="gamming">Gamming</option>
-                  <option value="economy">Economy</option>
-                  <option value="unanswered">I prefer not to say</option>
-                </select>
-              </div> 
-              <div class="form-group">
-                <p>Do you press the like button often?</p>
-                <label>
-                  <input
-                         name="user-press"
-                         value="yes"
-                         type="radio"
-                         class="input-radio"
-                         checked
-                  />Yes</label
-                >
-                <label>
-                  <input
-                         name="user-press"
-                         value="no"
-                         type="radio"
-                         class="input-radio"
-                         checked
-                  />No</label
-                >
-              </div>
-              <div class="form-groups">
-                <p>
-                  Which is your favorite section in the pletaform?
-                </p>
-                <select id="most-like" class="form-control" required>
-                  <option disabled selected value>Select an option</option>
-                  <option value="explorer">Explorer</option>
-                  <option value="shorts">Shorts</option>
-                  <option value="subscriptions">Subcriptions</option>
-                  <option value="originals">Originals</option>
-                  <option value="Music">Music</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <p>
-                  What would you like to see inproved?
-                  <span class="clue">(Check alll that apply)</span>
-                </p>
-                <label>
-                  <input
-                         name="prefer"
-                         value="explorer"
-                         type="checkbox"
-                         class="input-checkbox"
-                  />Explorer</label
-                >
-                <label>
-                  <input
-                         name="prefer"
-                         value="originals"
-                         type="checkbox"
-                         class="input-checkbox"
-                  />Originals</label
-                >
-                <label>
-                  <input
-                         name="prefer"
-                         value="subscriptions"
-                         type="checkbox"
-                         class="input-checkbox"
-                  />Subscriptions</label
-                >
-                <label>
-                  <input
-                         name="prefer"
-                         value="shorts"
-                         type="checkbox"
-                         class="input-checkbox"
-                  />Shorts</label
-                >
-                <label>
-                  <input
-                         name="prefer"
-                         value="music"
-                         type="checkbox"
-                         class="input-checkbox"
-                  />Music</label
-                >
-              </div>
-              <div class="form-group">
-                <p>Any comments or suggestions?</p>
-                <textarea
-                          id="comments"
-                          class="input-textarea"
-                          name="comment"
-                          placeholder="Enter your comment here..."
-                ></textarea>
-              </div>
-              <div class="form-group">
-                <button type="submit" id="submit" class="submit-button">
-                  Submit
-                </button>
-              </div>
-            </form>
+  <head>
+    <!--informacion general-->
+    <title>SurveyForm</title>
+    <meta charset="utf-8" />
+    <!-- forma de describir que tipo de caracteres estan en la pagina utf-8 es para EN -->
+    <meta name="description" content="SurveyForm" />
+    <!--Usado por el search engine-->
+    <!--links para ccs file y icono del website-->
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="" type="image/x-icon" rel="shortcut icon" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center"><u>Youtube Review form</u></h1>
+        <p id="description" class="description text-center">
+          Thank you for help us improve
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
         </div>
-    </body>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="16"
+            max="100"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which content do you enjoy most?</p>
+          <select id="dropdown" name="content" class="form-control" required>
+            <option disable selected value>Select content</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="gamming">Gamming</option>
+            <option value="economy">Economy</option>
+            <option value="unanswered">I prefer not to say</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Do you press the like button often?</p>
+          <label>
+            <input
+              name="user-press"
+              value="yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+          <label>
+            <input
+              name="user-press"
+              value="no"
+              type="radio"
+              class="input-radio"
+              checked
+            />No</label
+          >
+        </div>
+        <div class="form-groups">
+          <p>Which is your favorite section in the pletaform?</p>
+          <select id="most-like" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="explorer">Explorer</option>
+            <option value="shorts">Shorts</option>
+            <option value="subscriptions">Subcriptions</option>
+            <option value="originals">Originals</option>
+            <option value="Music">Music</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            What would you like to see inproved?
+            <span class="clue">(Check alll that apply)</span>
+          </p>
+          <label>
+            <input
+              name="prefer"
+              value="explorer"
+              type="checkbox"
+              class="input-checkbox"
+            />Explorer</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="originals"
+              type="checkbox"
+              class="input-checkbox"
+            />Originals</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="subscriptions"
+              type="checkbox"
+              class="input-checkbox"
+            />Subscriptions</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="shorts"
+              type="checkbox"
+              class="input-checkbox"
+            />Shorts</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="music"
+              type="checkbox"
+              class="input-checkbox"
+            />Music</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
