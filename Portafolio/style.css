@@ -219,7 +219,7 @@ img {
 .btn-show-all {
   font-size: 2rem;
   background: var(--main-dark-purple);
-  transition: all 1s ease-out; /*He modificado esta transicion si hay lgun problema chequear */
+  transition: background 0.3s ease-out; /*He modificado esta transicion si hay lgun problema chequear */
 }
 .btn-show-all:hover {
   background: var(--main-flame);
@@ -233,7 +233,7 @@ img {
   transition: transform 0.3s ease-out;
 }
 /* ^^^^^^^^^^^^^^^^ */
-/* Contact section */                                                                               
+/* Contact section */
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -241,7 +241,7 @@ img {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 53vh; /*altura cambiada*/
+  height: 80vh; /*altura cambiada*/
   padding: 0 2rem;
   background: var(--main-dark-purple);
   box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.5);
@@ -254,4 +254,45 @@ img {
     font-size: 4rem;
   }
 }
+.contact-section-header > p {
+  font-style: italic;
+}
 
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+/* Footer */
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--main-dark-purple);
+  border-top: 4px solid var(--main-flame);
+}
+footer > p {
+  margin: 2rem;
+}
+footer i {
+  vertical-align: middle;
+}
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
