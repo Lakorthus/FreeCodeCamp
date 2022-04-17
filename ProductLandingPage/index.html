@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--informacion general-->
+    <title>Pizza Time</title>
+    <meta charset="utf-8" />
+    <!-- forma de describir que tipo de caracteres estan en la pagina utf-8 es para EN -->
+    <meta name="description" content="Pizza Time" />
+    <!--Usado por el search engine-->
+    <!--links para ccs file y icono del website-->
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="" type="image/x-icon" rel="shortcut icon" />
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"crossorigin="anonymous"/>
+  </head>
+  <body>
+    <div id="page-wrapper">
+        <header id="header">
+            <div class="logo">
+                <img
+                    id="header-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKcDe8PdgQ-QigLgP0K1xhnj6-iVlMfYAvSg&usqp=CAU.png"
+                    alt="pizza time logo"
+                />
+            </div>
+    
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#tutorial">Tutorial</a></li>
+                    <li><a class="nav-link" href="#pricing">Prices</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container"></div>
+        <section id="hero">
+            <h2>Fresh delivered pizza in 15 minutes or we get your money and a pizza back!</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input
+                    name="postcode"
+                    id="postcode"
+                    type="text"
+                    placeholder="Postcode"
+                    required
+                />
+                <input
+                    name="email"
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email address"
+                    required
+                />
+                <input id="submit" type="submit" value="Bake" class="btn" />
+            </form>
+        </section>
+        <div class="container">
+            <section id="features">
+                <div class="grid">
+                <div class="icon"><i class="fa fa-3x fa-pizza-slice"></i></div>
+                <div class="desc">
+                    <h2>Premium Materials</h2>
+                    <p>
+                    Our pizzas are made only with fresh ingridients hand-picked and bake on our traditional ceramic wooden oven.
+                    </p>
+                </div>
+                </div>
+                <div class="grid">
+                <div class="icon"><i class="fa fa-3x fa-motorcycle"></i></div>
+                <div class="desc">
+                    <h2>Fast Delivery</h2>
+                    <p>
+                        We make sure you recieve your pizzas as soon as 15 minutes. We also provide free returns if you are not satisfied.
+                    </p>
+                </div>
+                </div>
+                <div class="grid">
+                <div class="icon">
+                    <i class="fa fa-3x fa-money-bill-alt" aria-hidden="true"></i>
+                </div>
+                <div class="desc">
+                    <h2>Assurance</h2>
+                    <p>
+                        Fresh delivered pizza in 15 minutes or we get your money and a pizza                 back!
+                    </p>
+                </div>
+                </div>
+            </section>
+            <section id="tutorial">
+                <iframe
+                    id="video"
+                    width="460"
+                    height="215" 
+                    src="https://www.youtube.com/embed/Hg5zM6-UbgU" title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                ></iframe>
+            </section>
+            <section id="pricing">
+                <div class="product" id="margarita">
+                <div class="level">Margarita</div>
+                    <h2>£7.99</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bdKKaTySsc4t8ahzTXQIG87Ls_J8ph907w&usqp=CAU"</img>
+                    <ol>
+                        <li>2x1</li>
+                        <li>3x2</li>
+                        <li>7x5</li>
+                        <div>
+                            <input
+                                name="quantity"
+                                id="quantity"
+                                type="number"
+                                placeholder=""
+                                min=""
+                                max=""
+                            >
+                        </div>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="romana">
+                <div class="level">Romana</div>
+                    <h2>£8.99</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6g4wqFDHOiTNu8GFruBLWny-Y2NFO3bFstw&usqp=CAU"</img>
+                    <ol>
+                        <li>2x1</li>
+                        <li>3x2</li>
+                        <li>7x5</li>
+                        <div>
+                            <input
+                                name="quantity"
+                                id="quantity"
+                                type="number"
+                                placeholder=""
+                                min=""
+                                max=""
+                            >
+                        </div>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="create-own">
+                <div class="level">Create your Own</div>
+                    <h2>£9.99</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxsHuC6ydY2E82kYWUJKHsjd7UppC4WrDa5A&usqp=CAU"</img>
+                    <ol>
+                        <li>2x1</li>
+                        <li>3x2</li>
+                        <li>7x5</li>
+                        <div>
+                            <input
+                                name="quantity"
+                                id="quantity"
+                                type="number"
+                                placeholder=""
+                                min=""
+                                max=""
+                            >
+                        </div>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+            </section>
+            <footer>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span>Copyright 2022, PizzaTime</span>
+            </footer>
+        </div>
+    </div> 
+    </body>
+</html>
