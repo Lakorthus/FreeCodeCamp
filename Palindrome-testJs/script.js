@@ -7,15 +7,20 @@ checkBtn.addEventListener("click", () => {
   // splitting user input character, reversing them, and joining them in a single word
   let reverseInput = filterInput.split("").reverse().join("");
   infoTxt.style.display = "block";
+
   if (filterInput != reverseInput) {
-    return (infoTxt.innerHTML = `No, <span>'${txtInput.value}'</span> is not a palindrome!`);
+    return (
+      (infoTxt.innerHTML = `No, <span>'${txtInput.value}'</span> is not a palindrome!`),
+      (txtInput.value = "")
+    );
   }
   infoTxt.innerHTML = `Yes, <span>'${txtInput.value}'</span> is a palindrome!`;
+  txtInput.value = "";
 });
 
 txtInput.addEventListener("keyup", () => {
   // removing spaces & all special characters from entered value
-  filterInput = txtInput.value.toLowerCase().replace(/[^A-Z0-9]/gi, "");
+  filterInput = txtInput.value.toLowerCase().replace(/\W+|_/g, "");
   if (filterInput) {
     return checkBtn.classList.add("active");
   }
