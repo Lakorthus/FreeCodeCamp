@@ -79,4 +79,5 @@ header p {
 
 .info-text span {
   color: rgb(42, 84, 63);
+  text-decoration: underline;
 }
