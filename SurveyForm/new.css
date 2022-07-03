@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
 
 :root {
@@ -18,11 +18,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
-  color: var(--color-white); /*puede que tenga que cambiar el color blanco*/
+  color: var(--color-white);
   margin: 0;
 }
-
-/* alternativa para el telefono usando background-attachment: fixed*/
 body::before{
   content: '';
   position: fixed;
@@ -37,7 +35,7 @@ body::before{
       rgba(118,8,458,0.8),
       rgba(333,33,65,0.7)
     ),
-    url(https://grambulk.com/wp-content/uploads/2021/06/Why-Is-My-Youtube-Video-Starting-In-The-Middle.png);
+    url(https://www.zdnet.com/a/img/resize/8974d46cae052b00495ab2989e14523134ca610b/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?width=770&height=578&fit=crop&auto=webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -85,8 +83,9 @@ button {
   }
 }
 
-.header {
+header {
   padding: 0 0.625rem;
+  text-align: center;
 }
 .description {
   font-style: italic;
@@ -116,14 +115,14 @@ form {
   }
 }
 .form-group {
-  margin: 0 auto 0.5rem auto;
+  margin: 20px auto 0.5rem auto;
   padding: 0.15rem;
 }
 .form-control {
   display: block;
   width: 100%;
   height: 2.375rem;
-  padding: 0.375rem 0.01rem;
+  padding: 0.375rem 0.5rem;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
@@ -136,7 +135,7 @@ form {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-input-radio,
+.input-radio,
 .input-checkbox {
   display: inline-block;
   margin-right: 0.625rem;
@@ -157,4 +156,4 @@ input-radio,
   color: inherit;
   border-radius: 2px;
   cursor: pointer;
-} */
+}

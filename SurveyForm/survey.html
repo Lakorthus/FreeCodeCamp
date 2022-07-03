@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="new.css" type="text/css" rel="stylesheet" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1 id="title"><u>Coding Experiences</u></h1>
+        <p id="description"><em>Thank you for help us improve</em></p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="16"
+            max="100"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which content do you enjoy most?</p>
+          <select id="dropdown" name="content" class="form-control" required>
+            <option disable selected value>Select content</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="SaAs">SaAs</option>
+            <option value="unanswered">I prefer not to say</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Do you use FreeCodeCamp often?</p>
+          <label>
+            <input
+              name="user-press"
+              value="yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+          <label>
+            <input
+              name="user-press"
+              value="no"
+              type="radio"
+              class="input-radio"
+              checked
+            />No</label
+          >
+        </div>
+        <div class="form-groups">
+            <p>Which editor you use to code?</p>
+            <select id="most-like" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="code editor">FreeCodeCamp Editor</option>
+              <option value="code editor">VisualStudio</option>
+              <option value="code editor">CodePen</option>
+              <option value="code editor">other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>
+              How you do think it is better to learn code?
+              <span class="clue">(Check alll that apply)</span>
+            </p>
+            <label>
+              <input
+                name="preference"
+                value="learn"
+                type="checkbox"
+                class="input-checkbox"
+              />Videos</label
+            >
+            <label>
+              <input
+                name="preference"
+                value="learn"
+                type="checkbox"
+                class="input-checkbox"
+              />Audio</label
+            >
+            <label>
+              <input
+                name="preference"
+                value="learn"
+                type="checkbox"
+                class="input-checkbox"
+              />Reading</label
+            >
+            <label>
+              <input
+                name="preference"
+                value="learn"
+                type="checkbox"
+                class="input-checkbox"
+              />Coding</label
+            >
+          </div>
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+      </form>
+    </main>
+  </body>
+</html>
